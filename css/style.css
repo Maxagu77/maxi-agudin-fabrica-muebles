@@ -1,0 +1,243 @@
+
+/* grid area */
+
+.grid-container-area {
+    display: grid;
+    grid-template-rows: 220px auto auto;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "pie pie pie";
+}
+
+header {
+    grid-area: header;
+    background: rgb(214, 153, 55);
+}
+
+
+
+/* flex model */
+
+nav.flex_container_nav {
+    background: rgb(187, 140, 38);
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+nav .flex_item {
+    display: block;
+    list-style: none;
+}
+
+nav .flex_item a {
+    color: black;
+    background-color: rgb(241, 225, 203);
+    text-decoration: none;
+    padding: 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 2px black;
+}
+nav .boton {
+    display: block;
+    list-style: none;
+}
+
+nav .boton a {
+    color: black;
+    background-color: rgb(241, 225, 203);
+    text-decoration: none;
+    padding: 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 2px black;   
+}
+
+nav .flex_item a:hover {
+    background-color: rgb(224, 175, 107);
+}
+
+nav .boton a:hover {
+    background-color: rgb(224, 175, 107);
+}
+
+.sublista {
+    position: absolute;
+    display:none;
+    margin-top: 5px;
+    margin-left: -40px;
+    list-style: none;
+}
+.sublista li a{ 
+    display: block;
+}
+
+.boton:hover .sublista {
+display: block;
+ }
+
+.titulo {
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: rgb(92, 71, 21);
+    font-size: 30px;
+}
+.animate__animated.animate__flipInX {
+    --animate-duration: 4s;
+  }
+
+.header_logo {
+    border-style: double;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 25px;
+    width: 200px;
+    height: auto;
+}
+
+
+main {
+    height: 100%;
+    grid-area: main;
+    background: rgb(85, 61, 52);
+}
+
+/*  grid items */
+
+div.grid_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    background: lemonchiffon;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 2%;
+}
+
+div.grid_item img {
+    justify-content: center;
+    border-style: double;
+    margin: 3%;
+}
+
+div.grid_item img:nth-child(1) {
+    background-color: blue;
+    padding: 5px;
+    
+}
+
+/* full responsive  */
+
+@media screen and (max-width: 770px) {
+    main div.grid_item {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: lemonchiffon;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        margin: 2%;
+    }
+    .titulo {
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        color: rgb(158, 36, 36);
+        font-size: 20px;
+    }
+    nav .flex_item a {
+        color: black;
+        background-color: rgb(241, 225, 203);
+        text-decoration: none;
+        padding: 5px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 2px black;
+    }
+
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    main div.grid_item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: lemonchiffon;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        margin: 2%;
+    }
+    /* nav .flex_item a {
+        color: black;
+        background-color: rgb(241, 225, 203);
+        text-decoration: none;
+        padding: 2px 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 2px black;
+    } */
+}
+
+.body_formulario {
+    background-color: blanchedalmond ;   
+}
+ 
+.header_formulario {   
+    background-color: burlywood;
+    margin-top: 20px;
+}
+ 
+.header_formulario a.inicio {
+    margin: 20px;
+    font-family: 'Lobster', cursive;
+    color: black;
+    text-decoration: none;
+}
+
+.main_formulario {
+    background-color: burlywood;
+}
+ 
+ 
+.titulo_formulario {
+     margin-top: 20px;
+     align-items: center;
+     background-color: black;
+     height: 30px;
+}
+ 
+.titulo_formulario h4 {
+     color: blanchedalmond;
+     text-align: center;
+     font-size: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+ 
+ 
+form.nombre {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 100px;
+}
+ 
+form.nombre div.flex_item {
+     align-items: center;
+     width: 500px;
+     margin: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+footer {
+    grid-area: pie;
+    background: rgb(41, 32, 26);
+    text-align: center;
+    height: auto;
+}
+
+footer p {
+    color: white;
+    display: inline;
+}

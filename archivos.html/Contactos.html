@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+
+    <link rel="shortcut icon" href="./imagenes/logo2.jpg">
+    <link rel="stylesheet" href="../css/style.css">   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="body_formulario">
+
+<header class="header_formulario">
+  <a class="inicio" href="../index.html">Ir a pagina principal</a>
+</header>
+
+
+<main class="main_formulario">
+
+  <div class="titulo_formulario">
+    <h4>Complete los siguientes datos, nos contactaremos a la brevedad.</h4>
+  </div>
+
+  <form class="nombre" action="" method="get">
+
+      <div class="flex_item"><label for="nombre">Nombre*</label>
+         <input type="text" id="nombre" placeholder="ingrese su nombre" required></div>
+  
+  
+      <div class="flex_item"><label>Apellido*</label>
+        <input type="text" id="Apellido" placeholder="ingrese su apellido" required></div>
+
+      <div class="flex_item"><label for="Email">Email*</label>
+        <input type="Email" name="Email" id="Email" required></div>
+  
+
+      <div class="flex_item">
+          <label for="">Femenino</label>
+           <input type="radio" id="femenino" name="sexo" value="F">
+        
+          <label for="">masculino</label> 
+           <input type="radio" id="masculino" name="sexo" value="M">
+        
+          <label for="">Otro</label> 
+           <input type="radio" id="otro" name="sexo" value="O">
+
+      </div>  
+
+      <div class="flex_item">
+      <textarea name="" id="" cols="60" rows="10" placeholder="  Dejenos su comentario"></textarea>
+      </div>
+
+    
+      <div class="flex_item">
+       <label for=""> Acepto terminos y condiciones</label>
+       <input type="checkbox" id="acepto" name="acepto" >
+      </div> 
+
+      <br><br>
+    <div class="flex_item">
+      <input type="submit" value="Enviar ahora"  >
+      <input type="reset" value="Borrar todo"  >
+    </div>
+
+  </form>
+
+</main>
+
+  <div style="margin-top: 250px;"></div>
+
+  <footer class="contactos">
+    <p>Realizado por Maximiliano Agudin</p>
+  </footer>
+
+
+
+</body>
+</html>
